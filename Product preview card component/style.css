@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+/*font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 30px auto;
+  padding: 0 30px;
+}
+
+.grid {
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.img img {
+  max-width: 100%;
+}
+
+.card-content {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h6.pro-cat {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  /*font-family: "Fraunces", serif;*/
+}
+
+h2.pro-name {
+  font-family: "Fraunces", serif;
+  font-size: 34px;
+  line-height: 1em;
+  color: hsl(212, 21%, 14%);
+}
+
+p.pro-des {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+p.current-price {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+p.old-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+button.cta {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  padding: 12px 0;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 3 ease;
+}
+
+button.cta.hover {
+  background-color: hsl(157, 36%, 23%);
+}
+
+button.cta img {
+  padding-right: 7px;
+}
